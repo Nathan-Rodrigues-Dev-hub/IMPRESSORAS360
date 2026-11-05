@@ -57,10 +57,3 @@ INSERT INTO pedidos (id_usuario, id_maquina, id_material, arquivo_gcode, tempo_e
 -- Pedidos Cancelados
 (2, NULL, 3, 'cobertura_estudo_v1.gcode', 180, 40.00, 'cancelado', '2026-10-19 11:00:00', NULL, NULL),
 (6, NULL, 2, 'teste_calibracao_torre.gcode', 60, 15.00, 'cancelado', '2026-10-18 16:30:00', NULL, NULL);
-
--- -----------------------------------------------------------------------------
--- 5. CARGA: manutencoes (Suporte para histórico de testes)
--- -----------------------------------------------------------------------------
-INSERT INTO manutencoes (id_maquina, descricao, data_inicio, data_fim, tipo) VALUES
-(2, 'Nivelamento de mesa e troca de bico 0.4mm', '2026-10-15 09:00:00', '2026-10-15 11:30:00', 'preventiva'),
-(4, 'Substituição do termistor do hotend em curto', '2026-10-22 15:00:00', NULL, 'corretiva');
